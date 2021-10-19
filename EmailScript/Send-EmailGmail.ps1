@@ -15,3 +15,4 @@ $mycreds = New-Object System.Management.Automation.PSCredential ($From, $secpass
 
 
 Send-MailMessage -From $From -to $To -Cc $Cc -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential $mycreds -Attachments $Attachment
+# Added
